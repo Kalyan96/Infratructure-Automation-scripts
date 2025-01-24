@@ -1,0 +1,16 @@
+ 
+device : R1
+interface:FastEthernet0/0 IP:192.168.200.11/24 status:up, protocol:up
+interface:FastEthernet1/0 IP:20.0.0.1/24 status:up, protocol:up
+interface:FastEthernet2/0 IP:20.0.1.2/24 status:up, protocol:up
+interface:FastEthernet3/0 IP:<no ip configured> status:up, protocol:up
+interface:FastEthernet5/0 IP:<no ip configured> status:up, protocol:up
+interface:Loopback1 IP:1.1.1.1/32 status:up, protocol:up
+
+device : R2
+interface:FastEthernet0/0 IP:192.168.200.12/24 status:up, protocol:up
+interface:FastEthernet1/0 IP:20.0.0.2/24 status:up, protocol:up
+interface:FastEthernet2/0 IP:20.0.2.1/24 status:up, protocol:up
+interface:FastEthernet5/0 IP:<no ip configured> status:up, protocol:up
+interface:FastEthernet6/0 IP:<no ip configured> status:up, protocol:up
+interface:Loopback1 IP:2.2.2.2/32 status:up, protocol:up

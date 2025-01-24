@@ -1,0 +1,16 @@
+interface fa1/0
+ip address 20.0.0.1 255.255.255.0
+ip ospf 1 area 0
+no shutdown
+
+interface fa2/0
+ip address 20.0.1.2 255.255.255.0
+ip ospf 1 area 1
+no shutdown
+
+int lo1
+ip address 1.1.1.1 255.255.255.255
+ip ospf 1 area 0
+
+router ospf 1
+router-id 1.1.1.1
